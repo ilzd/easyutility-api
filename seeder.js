@@ -22,18 +22,13 @@ const importData = async () => {
     // Insert maps
     const createdMaps = await Map.insertMany(mapsData);
 
-    // Get map IDs
-    const mirageMap = createdMaps.find(m => m.name === 'Mirage');
-    const infernoMap = createdMaps.find(m => m.name === 'Inferno');
-
     // Add mapId to lineups
     const sampleLineups = lineupsData.map(lineup => {
-      if (lineup.title.includes('Mirage')) {
-        return { ...lineup, mapId: mirageMap._id };
-      }
-      if (lineup.title.includes('Inferno')) {
-        return { ...lineup, mapId: infernoMap._id };
-      }
+      createdMaps.forEach(map => {
+        if (lineup.title.includes(map.name)) {
+          lineup.mapId = map._id;
+        }
+      });
       return lineup;
     });
 

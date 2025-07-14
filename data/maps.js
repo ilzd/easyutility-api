@@ -1,8 +1,8 @@
 const maps = [
   {
     name: "Mirage",
-    imageUrl: "/images/maps/mirage.png",
-    minimapUrl: "/images/maps/mirage_minimap.png",
+    imageUrl: "https://liquipedia.net/commons/images/thumb/c/cd/CS2_Mirage_A_site_behind_triple.jpg/600px-CS2_Mirage_A_site_behind_triple.jpg",
+    minimapUrl: "https://static.wikia.nocookie.net/cswikia/images/1/10/De_mirage_radar.png/revision/latest?cb=20180928185436",
     callouts: [
       {
         calloutId: "mirage_t_spawn",
@@ -20,8 +20,8 @@ const maps = [
   },
   {
     name: "Inferno",
-    imageUrl: "/images/maps/inferno.png",
-    minimapUrl: "/images/maps/inferno_minimap.png",
+    imageUrl: "https://images.steamusercontent.com/ugc/2193876107321389670/E0076B0C43D57FC4528BAB444CBBD621EF69C1D7/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false",
+    minimapUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Inferno_Minimap_%28CSGO%29.png/250px-Inferno_Minimap_%28CSGO%29.png",
     callouts: [
       {
         calloutId: "inferno_t_spawn",
